@@ -75,7 +75,7 @@ public class ReservationServiceImpl implements ReservationService {
         reservation.setSpot(minCostSpot);
         reservation.setUser(user);
 
-        minCostSpot.getReservations().add(reservation);
+        minCostSpot.getReservationList().add(reservation);
         user.getReservationList().add(reservation);
 
         return reservationRepository3.save(reservation);
